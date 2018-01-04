@@ -1,7 +1,7 @@
-name: bignumber_js
-description: Facade for bignumber.js.
+name: biginteger_js
+description: Facade for BigInteger.js.
 version: 0.0.1
-homepage: https://github.com/desktop-dart/bignumber_js
+homepage: https://github.com/desktop-dart/biginteger_js
 author: Ravi Teja Gudapati <tejainece@gmail.com>
 
 environment:

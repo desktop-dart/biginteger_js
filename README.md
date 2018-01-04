@@ -1,23 +1,23 @@
 # bignumber_js
 
-Facade for [bignumber.js](https://github.com/MikeMcl/bignumber.js) Javascript library. Provides
+Facade for [BigInteger.js](https://github.com/peterolson/BigInteger.js) Javascript library. Provides
 big number support for Dart.
 
 # Documentation
 
-Javascript documentation can be reached [here](http://mikemcl.github.io/bignumber.js/).
+Javascript documentation can be reached [here](https://github.com/peterolson/BigInteger.js/blob/master/README.md).
 
 # How to generate the facade?
 
-In case you want to update to a new version of bignumber.js or use a different version, do the following
+In case you want to update to a new version of BigInteger.js or use a different version, do the following
 steps:
 
-Get the [bignumber.min.js](https://raw.githubusercontent.com/MikeMcl/bignumber.js/master/bignumber.min.js).
+Get the [BigInteger.min.js](https://raw.githubusercontent.com/peterolson/BigInteger.js/master/BigInteger.min.js).
 
-Get the [bignumber.d.ts](https://raw.githubusercontent.com/MikeMcl/bignumber.js/master/bignumber.d.ts).
+Get the [BigInteger.d.ts](https://raw.githubusercontent.com/peterolson/BigInteger.js/master/BigInteger.d.ts).
 
 ```bash
-dart_js_facade_gen bignumber.d.ts > bignumber_js.dart
+dart_js_facade_gen BigInteger.d.ts > biginteger_js.dart
 ```
 
 Command to install `dart_js_facade_gen`,
