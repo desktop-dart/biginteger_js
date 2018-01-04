@@ -1,4 +1,4 @@
-# bignumber_js
+# biginteger_js
 
 Facade for [BigInteger.js](https://github.com/peterolson/BigInteger.js) Javascript library. Provides
 big number support for Dart.

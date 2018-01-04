@@ -197,7 +197,19 @@ abstract class _InternalFactory {
       [int base = 10, bool isNegative = false]);
 }
 
-BigInteger bigInt(number, [base = 10]) => _factory(number, base);
+abstract class MakeBigInt {
+  static BigInteger fromNum([num number = 0]) => _factory(number);
 
-BigInteger bigIntArray(List digits, [int base = 10, bool isNegative = false]) =>
-    _factory.fromArray(digits, base, isNegative);
+  static BigInteger fromString(String string, [int base = 10]) =>
+      _factory(string, base);
+
+  static BigInteger fromAnother(BigInteger integer) => _factory(integer);
+
+  static BigInteger fromRadixArray(List digits,
+          [int base = 10, bool isNegative = false]) =>
+      _factory.fromArray(digits, base, isNegative);
+
+  static BigInteger fromBytes(List /* num | BigInteger */ bytes,
+          [bool isNegative = false]) =>
+      _factory.fromArray(bytes, 256, isNegative);
+}
