@@ -195,6 +195,12 @@ abstract class _InternalFactory {
 
   external dynamic fromArray(List digits,
       [int base = 10, bool isNegative = false]);
+
+  external BigInteger gcd(a, b);
+
+  external BigInteger get zero;
+
+  external BigInteger get one;
 }
 
 abstract class MakeBigInt {
@@ -212,4 +218,10 @@ abstract class MakeBigInt {
   static BigInteger fromBytes(List /* num | BigInteger */ bytes,
           [bool isNegative = false]) =>
       _factory.fromArray(bytes, 256, isNegative);
+
+  static BigInteger gcd(a, b) => _factory.gcd(a, b);
+
+  static BigInteger get one => _factory.one;
+
+  static BigInteger get zero => _factory.zero;
 }
